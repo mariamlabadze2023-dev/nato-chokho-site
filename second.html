@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Concert List</title>
+    <title>Tickets</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,36 +30,55 @@
     </div>
 </header>
 
-<h1 class="page-title">Upcoming Concerts</h1>
+<h1 class="page-title">Buy Tickets</h1>
 
-<div class="concerts">
+<!-- FILTER BUTTONS -->
+<div class="filter-buttons">
+    <button onclick="filterTickets('all')">All</button>
+    <button onclick="filterTickets('available')">Available</button>
+    <button onclick="filterTickets('ended')">Ended</button>
+</div>
 
-    <div class="concert-card">
+<div class="tickets">
+
+    <div class="ticket-card ended">
+        <span class="status ended">Ended</span>
         <img src="images/1koncerti.jpg">
-        <h2>ნატო & ჭოხოები - ოტიუმი</h2>
-        <p>თარიღი: 22 მაისი 2026</p>
-        <p>ლოკაცია: კუს ტბა, თბილისი</p>
+        <h2>ოტიუმი</h2>
+        <p>📅 22 მაისი 2026</p>
+        <p>📍 კუს ტბა, თბილისი</p>
+        <p class="price">💵 70 GEL</p>
+        <a href="#" class="buy-btn disabled">Ended</a>
     </div>
 
-    <div class="concert-card">
+    <div class="ticket-card ended">
+        <span class="status ended">Ended</span>
         <img src="images/2koncerti.jpg">
-        <h2>ნატო & ჭოხოები - შატო ამარელი</h2>
-        <p>თარიღი: 29 მაისი 2026</p>
-        <p>ლოკაცია: ზესტაფონი</p>
+        <h2>შატო ამარელი</h2>
+        <p>📅 29 მაისი 2026</p>
+        <p>📍 ზესტაფონი</p>
+        <p class="price">💵 80 GEL</p>
+        <a href="#" class="buy-btn disabled">Ended</a>
     </div>
 
-    <div class="concert-card">
+    <div class="ticket-card ended">
+        <span class="status ended">Ended</span>
         <img src="images/3koncerti.jpg">
         <h2>Roots Resort</h2>
-        <p>თარიღი: 13 ივნისი 2026</p>
-        <p>ლოკაცია: ქობულეთი</p>
+        <p>📅 13 ივნისი 2026</p>
+        <p>📍 ქობულეთი</p>
+        <p class="price">💵 80 GEL</p>
+        <a href="#" class="buy-btn disabled">Ended</a>
     </div>
 
-    <div class="concert-card">
+    <div class="ticket-card">
+        <span class="status available">Available</span>
         <img src="images/4koncerti.jpg">
         <h2>ისრაელი ტური</h2>
-        <p>თარიღი: 20 ივნისი 2026</p>
-        <p>ლოკაცია: Bat Yam, Israel</p>
+        <p>📅 20 ივნისი 2026</p>
+        <p>📍 Bat Yam, Israel</p>
+        <p class="price">💵 120 GEL</p>
+        <a href="#" class="buy-btn">Buy Ticket</a>
     </div>
 
 </div>
@@ -69,6 +88,7 @@
 </footer>
 
 <script src="script.js"></script>
+
 <div class="particles">
     <span></span>
     <span></span>
